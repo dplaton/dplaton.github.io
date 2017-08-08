@@ -8,7 +8,7 @@
 
 <bpdy>
   <h1>Welcome to the sample website</h1>
-  <div class="grid-x grid-padding-x">
+  <div class="grid-x grid-padding-x" id="personalized">
     <div class="large-4 cell">
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam nisi enim, at varius dui imperdiet sed. </p> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam ac diam nisl. Suspendisse et pellentesque metus. Nunc in ornare magna. Phasellus in nisi at nisi suscipit vehicula. Etiam ut nisi sed magna sollicitudin mattis.
 Vivamus facilisis augue volutpat nisl maximus ultrices. Ut ipsum eros, viverra rutrum blandit in, egestas non dolor. Sed et purus ac sem commodo ornare vel id urna. Nullam luctus vehicula sem, et sagittis nibh vestibulum nec. Aliquam in sagittis velit. Etiam ultricies feugiat bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean iaculis congue tortor, ac rhoncus leo pharetra in. Mauris efficitur est turpis, sagittis finibus ipsum facilisis non. Nullam auctor, nulla ut mollis laoreet, nulla velit imperdiet nibh, ultricies lobortis sapien felis et sem. Nulla in suscipit urna, ac sagittis libero. Ut ac augue sollicitudin, elementum odio sit amet, consectetur massa.
@@ -17,5 +17,15 @@ Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculu
     </div>
     </div>
   </body>
-
+  <script type="text/javascript">
+    adobe.target.getOffer({
+      "mbox":"personalized",
+      "success": function() {
+        console.log("Success!")
+      },
+      "error":function() {
+        console.log("Error");
+      }
+      })
+  </script>
 </html>
